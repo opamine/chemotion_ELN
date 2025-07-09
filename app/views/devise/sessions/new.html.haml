@@ -1,0 +1,11 @@
+.container.my-5
+  - flash.each do |key, value|
+    %div{class: "alert alert-warning"}= value
+
+  = render "devise/shared/omniauth"
+
+  %hr
+
+  = render "devise/shared/dblogin"
+  = render "devise/shared/links"
+  = link_to "Back", root_path

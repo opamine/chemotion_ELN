@@ -1,0 +1,14 @@
+.elements-table-header {
+  @extend .d-flex;
+  @extend .align-items-center;
+  @extend .justify-content-between;
+  @extend .surface-tab__header;
+}
+
+@media (max-width: 600px) {
+  .elements-table-header {
+    height: auto;
+    flex-wrap: wrap;
+    overflow: auto;
+  }
+}

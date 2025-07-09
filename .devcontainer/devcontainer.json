@@ -1,0 +1,65 @@
+// For format details, see https://containers.dev/implementors/json_reference/.
+{
+  "name": "Chemotion Dockerfile",
+  "dockerComposeFile": [
+    "docker-compose.dev.yml",
+    "docker-compose.vs.yml"
+  ],
+  "service": "app",
+  "workspaceFolder": "/home/ubuntu/app",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "castwide.solargraph",
+        "Shopify.ruby-lsp",
+        "dbaeumer.vscode-eslint",
+        "misogi.ruby-rubocop",
+        "mtxr.sqltools",
+        "mtxr.sqltools-driver-pg",
+        "eamodio.gitlens",
+        "streetsidesoftware.code-spell-checker"
+      ],
+      "sqltools.connections": [
+        {
+          "previewLimit": 50,
+          "server": "postgres",
+          "port": 5432,
+          "driver": "PostgreSQL",
+          "name": "development",
+          "database": "chemotion_dev",
+          "username": "postgres",
+          "password": ""
+        },
+        {
+          "previewLimit": 50,
+          "server": "postgres",
+          "port": 5432,
+          "driver": "PostgreSQL",
+          "name": "test",
+          "database": "chemotion_test",
+          "username": "postgres",
+          "password": ""
+        }
+      ],
+      "solargraph.useBundler": true
+    }
+  },
+  "forwardPorts": [
+    3000,
+    5432
+  ],
+  "initializeCommand": [
+    "/bin/bash",
+    ".devcontainer/pre_create.sh"
+  ],
+  "postCreateCommand": [
+    "/bin/bash",
+    "prepare-ruby-dev.sh"
+  ],
+  "remoteUser": "ubuntu", // see https: //aka.ms/vscode-remote/containers/non-root
+  "shutdownAction": "stopCompose", // stop compose when quitting
+  "overrideCommand": true, // The 'app' container (which vscode is using as the devontainer) dies, as soon as we are killing the rails server that is started in the 'app' container command. To prevent this we override the 'app' container command from the the compose file.
+  "containerEnv": {
+    "RAILS_ENV": "development"
+  },
+}

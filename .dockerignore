@@ -1,0 +1,10 @@
+.git
+backup
+uploads
+public
+!/public/ontologies_default/
+.gitignore
+node_modules
+tmp
+.env
+
