@@ -41,25 +41,25 @@
 /config/mailcollector.yml
 /config/datamailcollector.yml
 /config/datacollector.yml
-/config/datacollectors.yml
+# /config/datacollectors.yml
 /config/data_collector_keys/*
-/config/user_props.yml
-/config/profile_default.yml
+# /config/user_props.yml
+# /config/profile_default.yml
 /config/compute_props.yml
-/config/converter.yml
-/config/ketcher_service.yml
-/config/structure_editors.yml
+# /config/converter.yml
+# /config/ketcher_service.yml
+# /config/structure_editors.yml
 !/config/data_collector_keys/.keep
 
-/config/database.yml
-/config/storage.yml
-/config/shrine.yml
-/config/spectra.yml
-/config/editors.yml
-/config/inference.yml
+# /config/database.yml
+# /config/storage.yml
+# /config/shrine.yml
+# /config/spectra.yml
+# /config/editors.yml
+# /config/inference.yml
 /config/omniauth.yml
-/config/scifinder_n.yml
-/config/radar.yml
+# /config/scifinder_n.yml
+# /config/radar.yml
 
 # test env
 /db/structure.sql
