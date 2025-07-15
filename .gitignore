@@ -34,12 +34,12 @@
 .env.test
 /.devcontainer/Dockerfile*
 /.devcontainer/docker-compose.dev*
-/docker-compose.services.yml
+# /docker-compose.services.yml
 
-/config/matrices.json
-/config/mailcollector.yml
-/config/datamailcollector.yml
-/config/datacollector.yml
+# /config/matrices.json
+# /config/mailcollector.yml
+# /config/datamailcollector.yml
+# /config/datacollector.yml
 # /config/datacollectors.yml
 /config/data_collector_keys/*
 # /config/user_props.yml
