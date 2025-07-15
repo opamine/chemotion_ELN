@@ -1,20 +1,20 @@
 development:
-  :url:
+  :url: http://127.0.0.1:9000/
   :profile:
-  :secret_key:
-  :timeout:
+  :secret_key: 7e2b1c4a9f8d6e3c5b4a392817161514131211100f0e0d0c0b0a090807060504
+  :timeout: 60
   :ext:
 
 test:
-  :url:
+  :url: http://127.0.0.1:9000/
   :profile:
-  :secret_key:
-  :timeout:
+  :secret_key: 7e2b1c4a9f8d6e3c5b4a392817161514131211100f0e0d0c0b0a090807060504
+  :timeout: 60
   :ext:
 
 production:
-  :url:
+  :url: http://127.0.0.1:9000/
   :profile:
-  :secret_key:
-  :timeout:
+  :secret_key: 7e2b1c4a9f8d6e3c5b4a392817161514131211100f0e0d0c0b0a090807060504
+  :timeout: 60
   :ext:
