@@ -32,7 +32,6 @@
 
 .env
 .env.test
-.dockerenv
 /.devcontainer/Dockerfile*
 /.devcontainer/docker-compose.dev*
 /docker-compose.services.yml
